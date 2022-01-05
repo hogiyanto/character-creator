@@ -1,6 +1,7 @@
 .footer {
-  position: relative;
-  padding: 64px;
+  position: fixed;
+  bottom: 0;
+  padding: 32px;
   background: hsl(0deg, 0%, 5%);
   color: white;
   text-align: center;
@@ -8,4 +9,11 @@
 
 .footer a {
   color: inherit;
+}
+
+@media (min-width: 640px) {
+  .footer {
+    position: relative;
+    padding: 64px;
+  }
 }
